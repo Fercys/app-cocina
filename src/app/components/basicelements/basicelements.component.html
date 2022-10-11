@@ -1,0 +1,46 @@
+<div class="section section-basic">
+    <div class="container" >
+        <div>
+        <img src="assets/img/light-marca.png" class="img-section" alt="" >
+        </div>
+      <h3 class="title-section">Contactanos</h3>   
+      <div id="inputs">  
+        <form [formGroup]="formulario" class="form">     
+          <div class="row">
+              <div class="col-sm-6 col-lg-6">
+                  <div class="form-group">
+                    <label id="name" class="label-bold">Nombre</label>
+                    <input type="text" value="" formControlName="nombre" placeholder="Nombre" class="form-control" />
+                  </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-6">
+                <div class="form-group">
+                    <label id="name" class="label-bold">Apellidosss</label>
+                    <input type="text" value="" placeholder="Apellido" formControlName="apellido" class="form-control" />
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-6">
+                <div class="form-group">
+                    <label id="name" class="label-bold">Mail</label>
+                    <input type="text" value="" placeholder="Mail" formControlName="mail" class="form-control" />
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-6">
+                <div class="form-group">
+                    <label id="name" class="label-bold">Telefono</label>
+                    <input type="text" value="" placeholder="Telefono" formControlName="telefono" class="form-control" />
+                </div>
+            </div>
+          
+    
+          </div>
+        </form>
+          <button class="btn btn-primary " type="button" (click)="guardarFormulario()" [disabled]="formulario.status !== 'VALID'">Enviar</button>
+         
+      </div>
+    
+    </div>
+</div>

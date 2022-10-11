@@ -1,0 +1,21 @@
+.icon-youtube{
+    border-radius: 50px;
+    border: 3px solid #B72C2C;
+
+}
+
+.icon-instagram{
+    border-radius: 50px;
+    border: 3px solid #D8AD3D;
+
+}
+
+.icon-facebook{
+    border-radius: 50px;
+    border: 3px solid #009CD9;
+
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link:not(.btn), .navbar .navbar-nav .nav-item .nav-link:not(.btn):focus, .navbar .navbar-nav .nav-item .nav-link:not(.btn):hover, .navbar .navbar-nav .nav-item .nav-link:not(.btn):active {    
+    border-radius: 50px;
+}

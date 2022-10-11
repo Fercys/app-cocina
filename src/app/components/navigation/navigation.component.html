@@ -1,0 +1,33 @@
+<div class="section section-navbars">
+    <div class="container" style="padding-top: 3rem" >
+        <div>
+            <img src="assets/img/light-marca.png" class="img-section" alt="" >
+            </div>
+        <h3 class="title-section">Nuestros artículos</h3> 
+        <div class="row" style="padding-top: 5rem; padding-bottom: 5rem;">
+            <div class="col-md-3">                
+                <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action active" (click)="getProductos()">
+                      TODOS
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action" (click)="obtenerProductoCategoria('Productos')">PRODUCTOS</button>
+                    <button type="button" class="list-group-item list-group-item-action" (click)="obtenerProductoCategoria('Recetas')">RECETAS</button>
+                    <button type="button" class="list-group-item list-group-item-action" (click)="obtenerProductoCategoria('Consejos')">CONSEJOS</button>                    
+                  </div>
+            </div>
+            <div class="col-md-9" *ngIf="dataProductos != undefined">
+                <div class="card" *ngFor="let producto of dataProductos">
+                    <img class="card-img-top" src="{{producto.image}}" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text-title">{{producto.title}}</p>
+                      <p class="card-text">{{producto.content}}</p>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+        
+    </div>
+</div>
